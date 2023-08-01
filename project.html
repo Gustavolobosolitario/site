@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ projeto.titulo }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ projeto.titulo }}</h1>
+    </header>
+    <div class="project-details">
+        <img src="{{ url_for('static', filename='images/' + projeto.imagem) }}" alt="{{ projeto.titulo }}">
+        <p>{{ projeto.descricao }}</p>
+    </div>
+</body>
+</html>
